@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.VotingPageActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:weightSum="1"
+        android:id="@+id/cdNames">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RBtn1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/RBtn1"
+            android:text="CANDIDATE 1"
+            android:textSize="18dp"
+            android:layout_toEndOf="@id/RBtn1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RBtn2"
+            android:layout_below="@id/RBtn1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/RBtn2"
+            android:text="CANDIDATE 2"
+            android:textSize="18dp"
+            android:layout_toEndOf="@id/RBtn2"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RBtn3"
+            android:layout_below="@id/RBtn2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/RBtn3"
+            android:text="CANDIDATE 3"
+            android:textSize="18dp"
+            android:layout_toEndOf="@id/RBtn3"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RBtn4"
+            android:layout_below="@id/RBtn3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/RBtn4"
+            android:text="CANDIDATE 4"
+            android:textSize="18dp"
+            android:layout_toEndOf="@id/RBtn4"/>
+
+        </RelativeLayout>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/cdNames"
+        android:id="@+id/VoteBtn"
+        android:layout_marginTop="30dp"
+        android:text="Vote"/>
+
+</RelativeLayout>
